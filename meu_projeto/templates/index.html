@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de Usuários</title>
+</head>
+ <body>
+    <h2 style="text-align: center;">Cadastro de Usuários</h2>
+    <form method="post" action="{% url 'criar_usuario' %}">
+        
+        <label>Nome:</label><br>
+        <input type="text" name="nome" placeholder="Nome" required><br><br>
+    
+        <label>Email:</label><br>
+        <input type="email" name="email" placeholder="exemplo@dominio.com" required><br><br>
+    
+        <label>Telefone:</label><br>
+        <input type="text" name="telefone" placeholder="(00)00000-0000" required><br><br>
+    
+        <label>Data de Aniversário:</label><br>
+        <input type="date" name="data_nascimento" required><br><br>
+    
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
